@@ -1,4 +1,5 @@
-#include monty.h;
+#include "monty.h"
+#include <stdlib.h>
 
 /**
  *implement push and pall opcodes
@@ -17,6 +18,7 @@ void push(stack_t **stack, unsigned int line_number, char *arg_str)
 int value, i = 0;
 
 /* if argument is not an integer or no argument was passed */
+}
 if (!arg_str || *arg_str == '\0')
 	{ 
 	fprintf(stderr, "L%d: usage: push integer\n", line_number);

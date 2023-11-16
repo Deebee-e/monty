@@ -36,3 +36,13 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+/* function prototypes */
+void pall(stack_t **stack, unsigned int line_number);
+void push(stack_t **stack, unsigned int line_number, char *arg_str);
+void pint(stack_t **stack, unsigned int line_number);
+
+#define USAGE "USAGE: monty file\n"
+#define FILE_ERROR "Error: Can't open file %s\n"
+
+#endif
